@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reto 2</title>
+
+    <!-- Reset CSS -->
+    <link rel="stylesheet" href="./css/reset.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/692ff1e671.js" crossorigin="anonymous"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;1,300&family=Ruda:wght@400..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+
+
+
+</head>
+
+<body>
+    <!-- Cabecera -->
+    <header class="bg-dark py-3 d-flex align-items-end">
+        <img src="https://cdn-icons-png.flaticon.com/512/9111/9111403.png" alt="" class="ms-5"
+            style="max-height: 50px;">
+        <p class="text-white ms-4">Cyber Components Store</p>
+
+    </header>
+
+    <main class="row my-5 d-flex justify-content-center">
+        <article class="col-6 p-3 card me-1 bg-secondary-subtle">
+            <section id="Components">
+                <h2 class="text-start m-3">Componentes</h2>
+                <div class="card text-center bg-secondary-subtle bg-opacity-10 border-0">
+                    <div class="card text-center bg-secondary-subtle border-0">
+                        <div class="card-header">
+                            <ul class="nav nav-tabs card-header-tabs" id="componentTabs">
+                                <li class="nav-item">
+                                    <a class="nav-link active" data-bs-toggle="tab" href="#placasMadre">Placas Madre</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-bs-toggle="tab" href="#procesadores">Procesadores</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-bs-toggle="tab" href="#memoriaRam">Memoria RAM</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-bs-toggle="tab" href="#tarjetasGraficas">Tarjetas
+                                        Gráficas</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-bs-toggle="tab" href="#almacenamiento">Almacenamiento</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-bs-toggle="tab" href="#gabinetes">Gabinetes</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-bs-toggle="tab" href="#fuentesPoder">Fuentes de Poder</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="card-body tab-content">
+                            <!-- Placas Madre -->
+                            <div class="tab-pane fade show active" id="placasMadre">
+                                <h3 class="my-4 fs-3">Placas Madre</h3>
+                                <!-- Intel -->
+                                <div class="container my-5">
+                                    <h4 class="text-start">Intel</h4>
+                                    <div class="row responsive-grid">
+                                        <div class="col">
+                                            <div class="card componentCard h-100 PlacaMadre" draggable="true">
+                                                <img src="https://media.spdigital.cl/thumbnails/products/ziqfrq_0_f032df5a_thumbnail_256.jpg"
+                                                    alt="..." draggable="false">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">ASUS Prime Z790-P WiFi</h5>
+                                                    <p class="card-text fw-bold">$289.990</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="card componentCard h-100 PlacaMadre" draggable="true">
+                                                <img src="https://media.spdigital.cl/thumbnails/products/3k2cg1aw_3997be53_thumbnail_256.jpg"
+                                                    alt="..." draggable="false">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">ASRock Z790 PG Lightning/D4</h5>
+                                                    <p class="card-text fw-bold">$247.880</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="card componentCard h-100 PlacaMadre" draggable="true">
+                                                <img src="https://media.spdigital.cl/thumbnails/products/1737658649277-h7_c2ae53d7_thumbnail_256.png"
+                                                    alt="..." draggable="false">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">ASUS ROG STRIX Z890-E GAMING WIFI</h5>
+                                                    <p class="card-text fw-bold">$639.990</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="card componentCard h-100 PlacaMadre" draggable="true">
+                                                <img src="https://media.spdigital.cl/thumbnails/products/4xuw1p_y_ffcdbd32_thumbnail_256.png"
+                                                    alt="Gigabyte Z790" draggable="false">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Gigabyte Z790</h5>
+                                                    <p class="card-text fw-bold">$639.990</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- AMD -->
+                                <div class="container my-5">
+                                    <h4 class="text-start">AMD</h4>
+                                    <div class="row responsive-grid">
+                                        <div class="col">
+                                            <div class="card componentCard h-100 PlacaMadre" draggable="true">
+                                                <img src="https://media.spdigital.cl/thumbnails/products/1738860083026-X870_GAMING_WIFI6-01_b1f8f73a_thumbnail_256.png"
+                                                    alt="..." draggable="false">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">GIGABYTE X870 GAMING WIFI6</h5>
+                                                    <p class="card-text fw-bold">$269.990</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="card componentCard h-100 PlacaMadre" draggable="true">
+                                                <img src="https://media.spdigital.cl/thumbnails/products/ud6t9b95_f37be4d3_thumbnail_256.png"
+                                                    alt="..." draggable="false">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Gigabyte A520M K V2</h5>
+                                                    <p class="card-text fw-bold">$61.990</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="card componentCard h-100 PlacaMadre" draggable="true">
+                                                <img src="https://media.spdigital.cl/thumbnails/products/vywvmeum_636ff399_thumbnail_256.png"
+                                                    alt="..." draggable="false">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Gigabyte B650M GAMING WIFI</h5>
+                                                    <p class="card-text fw-bold">$134.990</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="card componentCard h-100 PlacaMadre" draggable="true">
+                                                <img src="https://media.spdigital.cl/thumbnails/products/kl72w9s6_698888c3_thumbnail_256.png"
+                                                    alt="..." draggable="false">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Gigabyte B550M DS3H AC</h5>
+                                                    <p class="card-text fw-bold">$113.990</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="card componentCard h-100 PlacaMadre" draggable="true">
+                                                <img src="https://media.spdigital.cl/thumbnails/products/_jh1g6lf_2836f280_thumbnail_256.jpg"
+                                                    alt="..." draggable="false">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Aorus B550M Elite</h5>
+                                                    <p class="card-text fw-bold">$136.990</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="card componentCard h-100 PlacaMadre" draggable="true">
+                                                <img src="https://media.spdigital.cl/thumbnails/products/lludzoro_a0bf33ca_thumbnail_256.jpg"
+                                                    alt="..." draggable="false">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">AORUS X870 EAGLE WIFI 7</h5>
+                                                    <p class="card-text fw-bold">$289.990</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Procesadores -->
+                            <div class="tab-pane fade" id="procesadores">
+                                <h3 class="my-4 fs-3">Procesadores</h3>
+                                <!-- Intel -->
+                                <div class="container my-5">
+                                    <h4 class="text-start">Intel</h4>
+                                    <div class="row responsive-grid">
+                                        <div class="col">
+                                            <div class="card componentCard h-100 Procesador" draggable="true">
+                                                <img src="https://media.spdigital.cl/thumbnails/products/jhygye8r_ab15cef3_thumbnail_256.jpg"
+                                                    alt="..." draggable="false">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Intel Core i5-12600K</h5>
+                                                    <p class="card-text fw-bold">$232.560</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col">
+                                            <div class="card componentCard h-100 Procesador" draggable="true">
+                                                <img src="https://media.spdigital.cl/thumbnails/products/wqizyoou_fc269b2f_thumbnail_256.png"
+                                                    alt="i7-14700KF" draggable="false">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Intel Core i7-14700KF</h5>
+                                                    <p class="card-text fw-bold">$474.940</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="card componentCard h-100 Procesador" draggable="true">
+                                                <img src="https://media.spdigital.cl/thumbnails/products/cxykr690_85da7625_thumbnail_256.jpg"
+                                                    alt="..." draggable="false">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Intel Core i9-12900</h5>
+                                                    <p class="card-text fw-bold">$532.010</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="card componentCard h-100 Procesador" draggable="true">
+                                                <img src="https://media.spdigital.cl/thumbnails/products/4gpr8nqs_38e9cbdd_thumbnail_256.jpg"
+                                                    alt="..." draggable="false">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Intel Core i3-14100</h5>
+                                                    <p class="card-text fw-bold">$173.990</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Ryzen -->
+                                <div class="container my-5">
+                                    <h4 class="text-start">AMD</h4>
+                                    <div class="row responsive-grid">
+                                        <div class="col">
+                                            <div class="card componentCard h-100 Procesador" draggable="true">
+                                                <img src="https://media.spdigital.cl/thumbnails/products/1733771570910-2e88fcc3d87586bf3a2d187090f414a3fc353f85_dc38da46_thumbnail_25.jpg"
+                                                    alt="..." draggable="false">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Ryzen 7 9800X3D</h5>
+                                                    <p class="card-text fw-bold">$599.990</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="card componentCard h-100 Procesador" draggable="true">
+                                                <img src="https://media.spdigital.cl/thumbnails/products/pvbv_za8_48bcbfc3_thumbnail_256.png"
+                                                    alt="..." draggable="false">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Ryzen 5 4600G</h5>
+                                                    <p class="card-text fw-bold">$121.990</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="card componentCard h-100 Procesador" draggable="true">
+                                                <img src="https://media.spdigital.cl/thumbnails/products/1734632383217-ryzen_79bfca7a_thumbnail_256.png"
+                                                    alt="..." draggable="false">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Ryzen 5 5600X</h5>
+                                                    <p class="card-text fw-bold">$175.990</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="card componentCard h-100 Procesador" draggable="true">
+                                                <img src="https://media.spdigital.cl/thumbnails/products/ynda778y_2fd71e8b_thumbnail_256.jpg"
+                                                    alt="..." draggable="false">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Ryzen 7 5700G</h5>
+                                                    <p class="card-text fw-bold">$204.990</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Memorias Ram -->
+                            <div class="tab-pane fade" id="memoriaRam">
+                                <h3 class="my-4 fs-3">Memoria RAM</h3>
+
+                                <!-- DDR4 -->
+                                <div class="container my-5">
+                                    <h4 class="text-start">DDR4</h4>
+                                    <div class="row responsive-grid">
+                                        <div class="col">
+                                            <div class="card componentCard h-100 MemoriaRam" draggable="true">
+                                                <img src="https://media.spdigital.cl/thumbnails/products/_xiag1e3_7be5c2ae_thumbnail_256.jpg"
+                                                    alt="..." draggable="false">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Memoria RAM DDR4 16GB 3200MHz Kingston FURY
+                                                        Beast</h5>
+                                                    <p class="card-text fw-bold">$37.990</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="card componentCard h-100 MemoriaRam" draggable="true">
+                                                <img src="https://media.spdigital.cl/thumbnails/products/9l255rqe_d58d5e66_thumbnail_256.jpg"
+                                                    alt="..." draggable="false">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Memoria Ram Corsair Dominator, RGB, DDR4,
+                                                        16GB (2x8GB), 3200Mhz, DIMM
+                                                    </h5>
+                                                    <p class="card-text fw-bold">$103.780</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="card componentCard h-100 MemoriaRam" draggable="true">
+                                                <img src="https://media.spdigital.cl/thumbnails/products/qw6c9x5s_8b78c3e3_thumbnail_256.jpg"
+                                                    alt="..." draggable="false">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Memoria Ram DDR4 16GB (2x8GB) 4000MHz Corsair
+                                                        Vengeance RGB PRO SL</h5>
+                                                    <p class="card-text fw-bold">$116.410</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="card componentCard h-100 MemoriaRam" draggable="true">
+                                                <img src="https://media.spdigital.cl/thumbnails/products/pme0xzbj_68af8913_thumbnail_256.jpg"
+                                                    alt="..." draggable="false">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Memoria RAM DDR4 16GB 3200MHz XPG Spectrix
+                                                        D35G RGB</h5>
+                                                    <p class="card-text fw-bold">$30.990</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- DDR5 -->
+                                <div class="container my-5">
+                                    <h4 class="text-start">DDR5</h4>
+                                    <div class="row responsive-grid">
+                                        <div class="col">
+                                            <div class="card componentCard h-100 MemoriaRam" draggable="true">
+                                                <img src="https://media.spdigital.cl/thumbnails/products/k4x5ikfm_653119d1_thumbnail_256.jpg"
+                                                    alt="..." draggable="false">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Kit de Memoria RAM DDR5 32GB(2x16GB) 5200MT/s
+                                                        Corsair Vengeance RGB</h5>
+                                                    <p class="card-text fw-bold">$108.120</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="card componentCard h-100 MemoriaRam" draggable="true">
+                                                <img src="https://media.spdigital.cl/thumbnails/products/zh124kkg_db1afef3_thumbnail_256.jpg"
+                                                    alt="..." draggable="false">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Kit de Memoria RAM DDR5 96GB(2x48GB)
+                                                        6.600MT/s Corsair DOMINATOR TITANIUM
+                                                        RGB</h5>
+                                                    <p class="card-text fw-bold">$397.290</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="card componentCard h-100 MemoriaRam" draggable="true">
+                                                <img src="https://media.spdigital.cl/thumbnails/products/1729541739725-7f86bb8a612f2f9e39de7530d7cd60bf_89af11b5_thumbnail_256.jpg"
+                                                    alt="..." draggable="false">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Kit Memoria RAM Crucial Pro DDR5 64GB(2x32GB)
+                                                    </h5>
+                                                    <p class="card-text fw-bold">$236.990</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="card componentCard h-100 MemoriaRam" draggable="true">
+                                                <img src="https://media.spdigital.cl/thumbnails/products/wmaqmomn_45239506_thumbnail_256.jpg"
+                                                    alt="..." draggable="false">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Memoria RAM DDR5 48GB 6000MT/s Kingston Fury
+                                                        Renegade RGB</h5>
+                                                    <p class="card-text fw-bold">$186.830</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Graficas -->
+                            <div class="tab-pane fade" id="tarjetasGraficas">
+                                <h3 class="my-4 fs-3">Tarjetas Gráficas</h3>
+
+                                <!-- Nvidia -->
+                                <div class="container my-5">
+                                    <h4 class="text-start">Nvidia</h4>
+                                    <div class="row responsive-grid">
+                                        <div class="col">
+                                            <div class="card componentCard h-100 TarjetasGraficas" draggable="true">
+                                                <img src="https://media.spdigital.cl/thumbnails/products/d2skvnuu_a799ea3c_thumbnail_256.png"
+                                                    alt="..." draggable="false">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">ASUS Dual Nvidia GeForce RTX 4060 V2 OC</h5>
+                                                    <p class="card-text fw-bold">$364.990</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="card componentCard h-100 TarjetasGraficas" draggable="true">
+                                                <img src="https://media.spdigital.cl/thumbnails/products/0e7ru5yg_9b0914d5_thumbnail_256.jpg"
+                                                    alt="..." draggable="false">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">MSI Nvidia GeForce RTX 3050 LP 6G OC</h5>
+                                                    <p class="card-text fw-bold">$189.990</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="card componentCard h-100 TarjetasGraficas" draggable="true">
+                                                <img src="https://media.spdigital.cl/thumbnails/products/1733746615600-a3_b7e797a6_thumbnail_256.png"
+                                                    alt="..." draggable="false">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">ASUS PRIME Nvidia GeForce RTX 4070 SUPER OC
+                                                    </h5>
+                                                    <p class="card-text fw-bold">$824.990</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="card componentCard h-100 TarjetasGraficas" draggable="true">
+                                                <img src="https://media.spdigital.cl/thumbnails/products/0zm0nd1l_65cb3d22_thumbnail_256.png"
+                                                    alt="..." draggable="false">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">ASUS TUF Gaming Nvidia GeForce RTX 4070 Ti
+                                                        SUPER OC</h5>
+                                                    <p class="card-text fw-bold">$1.063.000</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="card componentCard h-100 TarjetasGraficas" draggable="true">
+                                                <img src="https://media.spdigital.cl/thumbnails/products/nb2o32sb_de002d38_thumbnail_256.png"
+                                                    alt="..." draggable="false">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">MSI Nvidia GeForce RTX 4070 Ti SUPER</h5>
+                                                    <p class="card-text fw-bold">$961.150</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- AMD -->
+                                <div class="container my-5">
+                                    <h4 class="text-start">AMD</h4>
+                                    <div class="row responsive-grid">
+                                        <div class="col">
+                                            <div class="card componentCard h-100 TarjetasGraficas" draggable="true">
+                                                <img src="https://media.spdigital.cl/thumbnails/products/1735656280554-e9_74c492d5_thumbnail_256.png"
+                                                    alt="..." draggable="false">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">ASUS DUAL Radeon RX 7600 V2 OC</h5>
+                                                    <p class="card-text fw-bold">$309.990</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="card componentCard h-100 TarjetasGraficas" draggable="true">
+                                                <img src="https://media.spdigital.cl/thumbnails/products/6s93b4nm_48ae52d8_thumbnail_256.png"
+                                                    alt="..." draggable="false">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Gigabyte AMD Radeon™ RX 7800 XT GAMING OC
+                                                    </h5>
+                                                    <p class="card-text fw-bold">$643.610</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="card componentCard h-100 TarjetasGraficas" draggable="true">
+                                                <img src="https://media.spdigital.cl/thumbnails/products/vdbfw2w1_c3a7e772_thumbnail_256.jpg"
+                                                    alt="..." draggable="false">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Gigabyte AMD Radeon RX 7900 XT Gaming OC</h5>
+                                                    <p class="card-text fw-bold">$999.990</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="card componentCard h-100 TarjetasGraficas" draggable="true">
+                                                <img src="https://media.spdigital.cl/thumbnails/products/0p_xxgfv_3255f3a7_thumbnail_256.png"
+                                                    alt="..." draggable="false">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">ASUS DUAL AMD Radeon RX 7600 V2 OC</h5>
+                                                    <p class="card-text fw-bold">$388.470</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Almacenamiento -->
+                            <div class="tab-pane fade" id="almacenamiento">
+                                <h3 class="my-4 fs-3">Almacenamiento</h3>
+
+                                <!-- Nvme/SSD -->
+                                <div class="container my-5">
+                                    <h4 class="text-start">Nvme/SSD</h4>
+                                    <div class="row responsive-grid">
+                                        <div class="col">
+                                            <div class="card componentCard h-100 Almacenamiento" draggable="true">
+                                                <img src="https://media.spdigital.cl/thumbnails/products/rk5ztu18_2377d096_thumbnail_256.png"
+                                                    alt="..." draggable="false">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">XPG Gammix S70 BLADE, 1TB</h5>
+                                                    <p class="card-text fw-bold">$84.990</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col">
+                                            <div class="card componentCard h-100 Almacenamiento" draggable="true">
+                                                <img src="https://media.spdigital.cl/thumbnails/products/4k2dn50l_0d249701_thumbnail_256.jpg"
+                                                    alt="..." draggable="false">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Kingston Fury Renegade, 1TB</h5>
+                                                    <p class="card-text fw-bold">$123.900</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col">
+                                            <div class="card componentCard h-100 Almacenamiento" draggable="true">
+                                                <img src="https://media.spdigital.cl/thumbnails/products/5oacrd1q_82ff0362_thumbnail_256.jpg"
+                                                    alt="..." draggable="false">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Kingston SSDNow A400, 480GB</h5>
+                                                    <p class="card-text fw-bold">$35.990</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col">
+                                            <div class="card componentCard h-100 Almacenamiento" draggable="true">
+                                                <img src="https://media.spdigital.cl/thumbnails/products/okiodtov_51c585fc_thumbnail_256.jpg"
+                                                    alt="..." draggable="false">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">WD Blue SN570, 250GB</h5>
+                                                    <p class="card-text fw-bold">$47.680</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col">
+                                            <div class="card componentCard h-100 Almacenamiento" draggable="true">
+                                                <img src="https://media.spdigital.cl/thumbnails/products/v10ax8pi_2344b5dd_thumbnail_256.jpg"
+                                                    alt="..." draggable="false">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Kingston SSDNow A400, 960GB</h5>
+                                                    <p class="card-text fw-bold">$56.990</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col">
+                                            <div class="card componentCard h-100 Almacenamiento" draggable="true">
+                                                <img src="https://media.spdigital.cl/thumbnails/products/515y66em_4626ddb4_thumbnail_256.png"
+                                                    alt="..." draggable="false">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Hikvision E3000, 512GB</h5>
+                                                    <p class="card-text fw-bold">$31.480</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <!-- HDD -->
+                                <div class="container my-5">
+                                    <h4 class="text-start">HDD</h4>
+                                    <div class="row responsive-grid">
+                                        <div class="col">
+                                            <div class="card componentCard h-100 Almacenamiento" draggable="true">
+                                                <img src="https://media.spdigital.cl/thumbnails/products/4kdmmtf7_6b454d0a_thumbnail_256.jpg"
+                                                    alt="..." draggable="false">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Toshiba P300, 1TB</h5>
+                                                    <p class="card-text fw-bold">$67.150</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col">
+                                            <div class="card componentCard h-100 Almacenamiento" draggable="true">
+                                                <img src="https://media.spdigital.cl/thumbnails/products/c_sb4t3i_4eb498cd_thumbnail_256.jpg"
+                                                    alt="..." draggable="false">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Seagate Barracuda, 2TB</h5>
+                                                    <p class="card-text fw-bold">$67.240</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col">
+                                            <div class="card componentCard h-100 Almacenamiento" draggable="true">
+                                                <img src="https://media.spdigital.cl/thumbnails/products/_zku5kyj_114a2ca5_thumbnail_256.jpg"
+                                                    alt="..." draggable="false">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Seagate SkyHawk AI, 10TB</h5>
+                                                    <p class="card-text fw-bold">$320.990</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col">
+                                            <div class="card componentCard h-100 Almacenamiento" draggable="true">
+                                                <img src="https://media.spdigital.cl/thumbnails/products/irmd0fjz_54bc88c3_thumbnail_256.jpg"
+                                                    alt="..." draggable="false">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">WD101PURP, 10TB</h5>
+                                                    <p class="card-text fw-bold">$399.990</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Gabinetes -->
+                            <div class="tab-pane fade" id="gabinetes">
+                                <h3 class="my-4 fs-3">Gabinetes</h3>
+                                <div class="container my-5">
+                                    <div class="row responsive-grid">
+                                        <div class="col">
+                                            <div class="card componentCard h-100 Gabinetes" draggable="true">
+                                                <img src="https://media.spdigital.cl/thumbnails/products/uarpex6c_d2479a00_thumbnail_256.jpg"
+                                                    alt="..." draggable="false">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">MSI MAG FORGE M100A</h5>
+                                                    <p class="card-text fw-bold">$59.990</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col">
+                                            <div class="card componentCard h-100 Gabinetes" draggable="true">
+                                                <img src="https://media.spdigital.cl/thumbnails/products/8cpx5vxl_b87d3c66_thumbnail_256.png"
+                                                    alt="..." draggable="false">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">APNX Creator C1 ARGB</h5>
+                                                    <p class="card-text fw-bold">$114.990</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col">
+                                            <div class="card componentCard h-100 Gabinetes" draggable="true">
+                                                <img src="https://media.spdigital.cl/thumbnails/products/ael3dc9__3dcb48f6_thumbnail_256.jpg"
+                                                    alt="..." draggable="false">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Lian Li Lancool III RGB</h5>
+                                                    <p class="card-text fw-bold">$144.990</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col">
+                                            <div class="card componentCard h-100 Gabinetes" draggable="true">
+                                                <img src="https://media.spdigital.cl/thumbnails/products/bn7ivppi_b8361332_thumbnail_256.jpg"
+                                                    alt="..." draggable="false">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">ASUS ROG Strix Helios GX601</h5>
+                                                    <p class="card-text fw-bold">$379.990</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col">
+                                            <div class="card componentCard h-100 Gabinetes" draggable="true">
+                                                <img src="https://media.spdigital.cl/thumbnails/products/li2n1fu5_04b3b30d_thumbnail_256.jpg"
+                                                    alt="..." draggable="false">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">ASUS TUF GAMING GT301</h5>
+                                                    <p class="card-text fw-bold">$91.570</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Fuentes -->
+                            <div class="tab-pane fade" id="fuentesPoder">
+                                <h3 class="my-4 fs-3">Fuentes de Poder</h3>
+                                <div class="container my-5">
+                                    <div class="row responsive-grid">
+                                        <div class="col">
+                                            <div class="card componentCard h-100 FuentesPoder" draggable="true">
+                                                <img src="https://media.spdigital.cl/thumbnails/products/1739450019450-a2_f86bcc21_thumbnail_256.png"
+                                                    alt="..." draggable="false">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Fuente de Poder 1600W Gigabyte UD1600PM PG5
+                                                        AI TOP, 80 PLUS Platinum,
+                                                        Modular</h5>
+                                                    <p class="card-text fw-bold">$499.990</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col">
+                                            <div class="card componentCard h-100 FuentesPoder" draggable="true">
+                                                <img src="https://media.spdigital.cl/thumbnails/products/l2kuawy0_14b0e400_thumbnail_256.png"
+                                                    alt="..." draggable="false">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Fuente de Poder 750W ASUS TUF Gaming Gold,
+                                                        Certificada 80+ Plus Gold,
+                                                        Full Modular</h5>
+                                                    <p class="card-text fw-bold">$138.870</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col">
+                                            <div class="card componentCard h-100 FuentesPoder" draggable="true">
+                                                <img src="https://media.spdigital.cl/thumbnails/products/1732654774115-a7_ad3aff63_thumbnail_256.png"
+                                                    alt="..." draggable="false">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Fuente de Poder Be Quiet! System Power 10 U
+                                                        650W, Certificada 80 PLUS
+                                                        Bronze</h5>
+                                                    <p class="card-text fw-bold">$72.990</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col">
+                                            <div class="card componentCard h-100 FuentesPoder" draggable="true">
+                                                <img src="https://media.spdigital.cl/thumbnails/products/jw3j69ak_d6537e24_thumbnail_256.jpg"
+                                                    alt="..." draggable="false">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Fuente de Poder 650W MSI MAG A650BN,
+                                                        Certificada 80 PLUS Bronze</h5>
+                                                    <p class="card-text fw-bold">$85.220</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col">
+                                            <div class="card componentCard h-100 FuentesPoder" draggable="true">
+                                                <img src="https://media.spdigital.cl/thumbnails/products/1737573922300-f7_30203a9c_thumbnail_256.png"
+                                                    alt="..." draggable="false">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Fuente de Poder COUGAR GEX 850W - Certificada
+                                                        80 PLUS Gold</h5>
+                                                    <p class="card-text fw-bold">$109.990</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+            </section>
+        </article>
+
+        <article class="col-5 p-5 card ms-1 bg-secondary-subtle d-flex flex-column">
+            <section id="Cart" class="p-5 my-2 bg-body card">
+                <h2>Carrito</h2>
+                <ul class="list-group px-4 py-2 r-4" style="border: none" id="cartList"></ul>
+            </section>
+            <section id="Total" class="p-3 my-2 bg-body card mt-auto">
+                <h2 id="TotalPrice">Total:</h2>
+            </section>
+        </article>
+
+    </main>
+
+
+    <!-- <li class="list-group-item cartItem">
+                
+        <p class="mb-0">Producto <button
+                class="float-end bg-danger border-1 text-white btn-delete-product">X</button>
+        </p>
+
+        <span class="text-info price float-end">Precio $</span>
+    </li> -->
+    <footer class="bg-dark text-white fixed-bottom text-center">
+        <p>@Reto 2 - Cpeña</p>
+    </footer>
+
+
+    <!-- Custom JS -->
+    <script src="./js/User_Dates.js"></script>
+    <script src="./js/app.js"></script>
+
+</body>
+
+
+<!-- Popper.js for Bootstrap -->
+
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+
+</html>

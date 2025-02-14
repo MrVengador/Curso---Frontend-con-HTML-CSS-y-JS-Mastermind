@@ -1,21 +1,64 @@
-// Selecciona los elementos del DOM
-const User_Name = document.getElementById("nickname");
-const User_Size = document.getElementById("size");
-const Form_User = document.getElementById("formulario");
+/**
+ * @author Cristian Peña <cristian.penavillar@gmail.com>
+ */
 
-const error = document.getElementById("Error_msg");
 
-if (sessionStorage.getItem('error')) {
-    error.inertText = sessionStorage.getItem('error');
-    sessionStorage.removeItem('error');
-}
+var User_Name;
+var User_Size;
+var Email;
+var Form_User;
+var error;
+var avatarItems;
+var itemIMG;
+var currentAvatar;
 
-// Agrega el event listener para el submit del formulario
-Form_User.addEventListener('submit', View_Dates);
+
+//Inicia la carga de eventos
+document.addEventListener('DOMContentLoaded', domCharge);
 
 //GEOLOCALIZACION
 DatoGeoLocalizacion();
 
+
+// Selecciona los elementos del DOM
+function domCharge() {
+
+    User_Name = document.getElementById("nickname");
+    User_Size = document.getElementById("size");
+    Email = document.getElementById("email");
+    Form_User = document.getElementById("formulario");
+    error = document.getElementById("Error_msg");
+
+    if (sessionStorage.getItem('error')) {
+        error.inertText = sessionStorage.getItem('error');
+        sessionStorage.removeItem('error');
+    }
+
+    // Agrega el event listener para el submit del formulario
+    Form_User.addEventListener('submit', View_Dates);
+
+    currentAvatar = document.getElementById("AvatarActual");
+    avatarItems = document.getElementsByClassName("avatarImgItem");
+    for (let item of avatarItems) {
+
+        item.addEventListener('dragstart', moviendoImg)
+
+    }
+
+    currentAvatar.addEventListener('dragover', e => { e.preventDefault() })
+    currentAvatar.addEventListener('drop', changeImg)
+
+
+}
+
+function moviendoImg(event) {
+    itemIMG = event.target;
+    console.log("Moviendo la imagen de " + itemIMG.alt);
+}
+function changeImg(event) {
+    currentAvatar.alt = "Avatar " + itemIMG.alt;
+    currentAvatar.src = itemIMG.src;
+}
 
 
 // Define la función View_Dates y recibe el evento
@@ -43,6 +86,7 @@ function View_Dates(event) {
     // Si las validaciones son correctas, mostrar la información en la consola
     console.log("Nickname is: " + User_Name.value);
     console.log("Size is: " + User_Size.value);
+    console.log("Email is: " + Email.value);
     error.innerText = ""
 
 
@@ -62,9 +106,3 @@ function View_Dates(event) {
     }
 
 }
-
-
-
-
-
-

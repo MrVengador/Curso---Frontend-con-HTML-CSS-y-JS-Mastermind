@@ -47,20 +47,62 @@
                 </div>
 
                 <form action="Game.html" class="" id="formulario">
-                    <div class="itemform">
-                        <label for="nickname" class="form-label">Nickname:</label>
-                        <input type="text" class="form-control" id="nickname" placeholder="NoobMaster69" required
-                            minlength="2">
-                    </div>
+                    <div class="row mb-5">
+                        <div class="itemform  col-lg-6 col-md-5 col-sm-4">
+                            <label for="nickname" class="form-label">Nickname:</label>
+                            <input type="text" class="form-control" id="nickname" placeholder="NoobMaster69" required
+                                minlength="2">
+                        </div>
 
-                    <div class="itemform mt-5">
-                        <label for="size" class="form-label">Dimensiones:</label>
-                        <select name="sizeGame" class="form-control text-center" id="size" required>
-                            <option value="0">--Escoge las dimensiones--</option>
-                            <option value="1">" 3x3 "</option>
-                            <option value="2">" 4x4 "</option>
-                            <option value="3">" 5x5 "</option>
-                        </select>
+                        <div class="itemform col-lg-6 col-md-5 col-sm-4">
+                            <label for="size" class="form-label">Dimensiones:</label>
+                            <select name="sizeGame" class="form-control text-center" id="size" required>
+                                <option value="0">--Escoge las dimensiones--</option>
+                                <option value="1">" 3x3 "</option>
+                                <option value="2">" 4x4 "</option>
+                                <option value="3">" 5x5 "</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="itemform  col-lg-9 col-md-7 col-sm-6 ">
+                        <label for="correo" class="form-label">Correo:</label>
+                        <input type="email" class="form-control" id="correo" placeholder="NoobMaster69" minlength="3"
+                            required="@">
+                    </div>
+                    <div class="itemform my-3">
+                        <div id="avatar" class="float-start me-2 ">
+                            <label for="avatar" class="text-center">Avatar</label>
+                            <div id="avatarContainer" class="mt-3">
+                                <img src="https://i.pinimg.com/736x/ca/4d/63/ca4d63ce276f2bb2d1d024cee4ff2a58.jpg"
+                                    alt="avatarImg" style="max-height: 150px;"
+                                    class="border rounded-pill border-2 border-info" draggable="true" id="AvatarActual">
+                            </div>
+                        </div>
+                        <div id="avatarGrid"
+                            class="bg-info-subtle rounded-5 d-flex justify-content-center align-items-center flex-wrap">
+
+                            <div class="avatarItem m-1 col-lg-4 col-md-5 col-sm-6  d-flex justify-content-center">
+                                <img src="https://i.pinimg.com/736x/ca/4d/63/ca4d63ce276f2bb2d1d024cee4ff2a58.jpg"
+                                    alt="Rudeus" style="max-height: 100px;"
+                                    class="border rounded-pill border-2 border-black avatarImgItem" draggable="true">
+                            </div>
+                            <div class="avatarItem m-1 col-lg-4 col-md-5 col-sm-6  d-flex justify-content-center">
+                                <img src="https://i.pinimg.com/originals/ff/22/d8/ff22d880b7bea11a8136f2d8eab72bc6.jpg"
+                                    alt="Roxy" style="max-height: 100px;"
+                                    class="border rounded-pill border-2 border-black avatarImgItem" draggable="true">
+                            </div>
+                            <div class="avatarItem m-1 col-lg-4 col-md-5 col-sm-6  d-flex justify-content-center">
+                                <img src="https://steamuserimages-a.akamaihd.net/ugc/1861675727196101377/250A0A82C089D6A5792117DF07BA7197AC1E1877/?imw=512&&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false"
+                                    alt="Eris" style="max-height: 100px;"
+                                    class="border rounded-pill border-2 border-black avatarImgItem" draggable="true">
+                            </div>
+                            <div class="avatarItem m-1 col-lg-4 col-md-5 col-sm-6  d-flex justify-content-center">
+                                <img src="https://i.pinimg.com/736x/d8/b9/66/d8b966b1054ffca2130c9de898019ebd.jpg"
+                                    alt="Sylphiette" style="max-height: 100px;"
+                                    class="border rounded-pill border-2 border-black avatarImgItem" draggable="true">
+                            </div>
+
+                        </div>
                     </div>
 
                     <div class="mt-5 d-flex justify-content-center">

@@ -1,0 +1,80 @@
+body
+{
+    background-image: url("https://images.unsplash.com/photo-1576400883215-7083980b6193?q=80&w=2013&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-position: center;
+
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-size: 18px;
+
+}
+
+.componentCard
+{
+    max-width: 220px;
+    max-height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    /* Distribuye el contenido */
+}
+
+.componentCard img
+{
+    max-height: 150px;
+    max-width: 150px;
+    padding: 10px;
+    flex-shrink: 0;
+    /* Evita que la imagen se reduzca */
+}
+
+.componentCard .card-body
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    /* Empuja el contenido hacia abajo */
+    flex-grow: 1;
+    /* Ocupa el espacio restante en la tarjeta */
+    width: 100%;
+    /* Asegura que ocupe todo el ancho */
+}
+
+.componentCard h5
+{
+    font-size: 16px;
+    padding: 5px 0;
+    margin-top: auto;
+}
+
+.componentCard p
+{
+    font-size: 18px;
+    color: rgb(71, 0, 99);
+    margin-top: auto;
+    /* Empuja el precio hacia abajo */
+}
+
+
+.responsive-grid
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+}
+
+.btn-delete-product
+{
+    max-width: 20px;
+    max-height: 20px;
+    font-size: 10px;
+}
+
+#Cart
+{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
