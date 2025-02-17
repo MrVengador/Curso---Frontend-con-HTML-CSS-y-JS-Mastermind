@@ -1,0 +1,162 @@
+header,
+section,
+footer,
+#GameContainer,
+#UserContainer
+{
+    background-image: url("https://i.pinimg.com/736x/fd/92/42/fd9242a1f0b64386ad2576776f8953cc.jpg");
+
+}
+
+section
+{
+    background-size: contain;
+    font-weight: 600;
+}
+
+footer
+{
+    font-weight: 400;
+    text-align: center;
+}
+
+body
+{
+    background-image: url("https://images5.alphacoders.com/135/thumb-1920-1358229.jpeg");
+    background-size: cover;
+
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+
+.containerItem
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 100px;
+    min-height: 100px;
+    /* border: 1px solid rgba(0, 0, 0, 0); */
+    border-radius: 30px;
+}
+
+.item
+{
+    background-color: purple;
+    border-radius: 50px;
+    width: 80px;
+    height: 80px;
+    border: 2px solid rgb(0, 0, 0);
+}
+
+.containerItem.Eris
+{
+    background-color: rgb(105, 0, 0);
+    border-color: rgb(0, 0, 0);
+    transition: background-color 0.4s;
+}
+
+.containerItem.Roxy
+{
+    background-color: rgb(0, 91, 177);
+    border-color: rgb(207, 207, 207);
+    transition: background-color 0.4s;
+}
+
+.containerItem.Sylphiette
+{
+    background-color: rgb(154, 206, 34);
+    border-color: rgb(75, 95, 0);
+    transition: background-color 0.4s;
+}
+
+.containerItem.Rudeus
+{
+    background-color: rgb(158, 117, 5);
+    border-color: rgb(107, 0, 0);
+    transition: background-color 0.4s;
+}
+
+/* Cambio aquí: .item.Eris en lugar de .item .Eris */
+.item.Eris
+{
+    background-image: url("https://i.pinimg.com/736x/04/5f/fd/045ffde9abe9aa4ee7ca9434ed74bcc0.jpg");
+    background-size: cover;
+}
+
+.item.Roxy
+{
+    background-image: url("https://i.pinimg.com/originals/ff/22/d8/ff22d880b7bea11a8136f2d8eab72bc6.jpg");
+    background-size: cover;
+}
+
+.item.Sylphiette
+{
+    background-image: url("https://i.pinimg.com/736x/d8/b9/66/d8b966b1054ffca2130c9de898019ebd.jpg");
+    background-size: cover;
+}
+
+.item.Rudeus
+{
+    background-image: url("https://i.pinimg.com/736x/ca/4d/63/ca4d63ce276f2bb2d1d024cee4ff2a58.jpg");
+    background-size: cover;
+}
+
+
+#Game
+{
+    z-index: 2;
+    position: absolute;
+    background-image: url(https://www.publicdomainpictures.net/pictures/450000/nahled/vintage-hintergrund-pergament-natur.jpg);
+    max-width: 500px;
+    min-width: 400px;
+    padding: 20px;
+    align-self: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+
+}
+
+
+#EndGame
+{
+    z-index: -1;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-image: url("https://pbs.twimg.com/media/Es56aFCXEAEpb-p?format=jpg&name=large");
+    background-size: cover; */
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 5px 5px 0px 0px;
+}
+
+.GameOverColor
+{
+    background-image: url("https://pbs.twimg.com/media/Es56aFCXEAEpb-p?format=jpg&name=large");
+    background-size: cover;
+    /* background-color: black; */
+    transition: background-image 0.4s;
+}
+
+#TitleGame
+{
+    z-index: 3;
+}
+
+#EndGame button
+{
+    background-color: white;
+    border: 1px solid gray;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    width: 200px;
+}
