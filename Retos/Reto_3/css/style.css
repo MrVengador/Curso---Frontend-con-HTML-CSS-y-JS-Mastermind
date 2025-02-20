@@ -115,8 +115,8 @@ body
     justify-content: center;
     align-items: center;
     background-image: url("https://external-preview.redd.it/V-08n_jxf2yyIb8GE5QfYpFJlGKPOwsp2ljshv9O-Iw.jpg?auto=webp&s=24c401a463f4f52decaea77cf72d1af232d63ae4");
-    /* background-color: black; */
-    background-size: contain;
+    background-size: cover;
+    background-position: right;
     border: 2px solid rgb(0, 0, 0);
     border-radius: 5px 5px 0px 0px;
 }

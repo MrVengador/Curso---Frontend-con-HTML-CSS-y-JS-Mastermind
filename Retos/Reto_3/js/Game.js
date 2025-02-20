@@ -44,7 +44,7 @@ EndGameText.textContent = "You Are Dead";
 
 
 Game(); //Start Game
-
+console.log("HOLA");
 // FUNCIONES
 
 function Game() {
@@ -339,8 +339,6 @@ function Timer() {
         EndGameText.textContent = "You Are Dead";
         EndGameText.classList.remove("text-success");
         EndGameText.classList.add("text-danger");
-        document.getElementById("EndGame").style.zIndex = 2;
-
         EndGame();
     }
     else {
@@ -390,6 +388,7 @@ function ColorSelected() {
 
 function PaintColors() {
     const items = document.getElementsByClassName("item");
+    ColorSelected(); //Selecciona los colores de las cartas aleatoriamente n/2
 
     console.log("Hay " + numCards + " cartas");
 
@@ -416,8 +415,6 @@ function EndGame() {
     for (let item of items) {
         item.removeEventListener("mousedown", SelectItem);
     }
-    ItemsAllFlip();
-    FormatedColors(true); // Limpiar los colores
 
     console.log("GAME OVER! Presiona el botón de reinicio para jugar nuevamente.");
     document.getElementById("EndGame").style.zIndex = 2;
@@ -441,6 +438,7 @@ function ResetGame() {
     LastCard = null;
     CurrentCard = null;
     CurrentsCards = [];
+    CardsWin = [];
     Intentos = maxIntentos;
     IntentosText.textContent = Intentos;
 
@@ -449,7 +447,7 @@ function ResetGame() {
 
     document.getElementById("EndGame").style.zIndex = -1;
     document.getElementById("Game").style.zIndex = 2;
+    intervalId = setInterval(Timer, 1000);
 
-    PlayGame(); // Iniciar el juego nuevamente
 }
 
