@@ -1,0 +1,267 @@
+header,
+footer
+{
+    /* background-image: url("https://i.pinimg.com/736x/ac/e1/aa/ace1aa8559cf938a9131585baf525981.jpg"); */
+    background-color: rgb(27, 27, 27);
+}
+
+header
+{
+    border-bottom: 3px solid rgb(82, 0, 0);
+
+    font-family: "Noto Sans Gothic", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+footer
+{
+    border-top: 3px solid rgb(82, 0, 0);
+}
+
+body
+{
+    background-image: url("https://www.techspot.com/images2/news/bigimage/2022/10/2022-10-21-image-11.jpg");
+    background-size: cover;
+}
+
+#ContainerForm
+{
+    max-width: 600px;
+    max-height: max-content;
+}
+
+#AvatarActual
+{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid rgb(110, 0, 0);
+    overflow: hidden;
+}
+
+#UserAvatar
+{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid rgb(110, 0, 0);
+    overflow: hidden;
+}
+
+#avatarContainer
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Centra verticalmente */
+    justify-content: center;
+    /* Opcional: centra horizontalmente */
+    height: 100%;
+    /* Asegura que tome toda la altura disponible */
+}
+
+.avatarItem
+{
+    margin: 5px;
+    display: inline-block;
+    /* Para que las imágenes queden en línea */
+}
+
+.avatarImgItem
+{
+    width: 100px;
+    /* Asegura que sea un cuadrado */
+    height: 100px;
+    /* Igual al ancho para que sea un círculo */
+    object-fit: cover;
+    /* Ajusta la imagen sin deformarla */
+    border-radius: 50%;
+    /* Hace que sea completamente circular */
+    border: 2px solid rgb(58, 58, 58);
+    /* Color del borde */
+    overflow: hidden;
+    /* Asegura que los bordes no se salgan */
+}
+
+#GameContainer
+{
+    width: 600px;
+    height: 800px;
+    background-color: rgb(20, 20, 20);
+}
+
+#Game
+{
+    width: 560px;
+    height: 760px;
+    background-color: rgb(126, 0, 0);
+    align-self: center;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 5px;
+    justify-items: center;
+    align-items: center;
+}
+
+#EndGame
+{
+    z-index: -1;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://external-preview.redd.it/V-08n_jxf2yyIb8GE5QfYpFJlGKPOwsp2ljshv9O-Iw.jpg?auto=webp&s=24c401a463f4f52decaea77cf72d1af232d63ae4");
+    /* background-color: black; */
+    background-size: contain;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 5px 5px 0px 0px;
+}
+
+
+.containerItem
+{
+    position: relative;
+    display: inline-block;
+}
+
+.item
+{
+    width: 150px;
+    height: 200px;
+    border: 3px solid rgb(114, 87, 0);
+    border-radius: 10px;
+    position: center;
+    background-size: cover;
+    background-image: url("https://i.pinimg.com/736x/d7/c4/17/d7c417dcba1200c6e668a15defc2a5ba.jpg");
+    /* Imagen de la cara frontal */
+    transition: all 0.3s ease-in-out;
+    /* Transición para el cambio de z-index */
+
+}
+
+.itemBack
+{
+    width: 150px;
+    height: 200px;
+    border: 3px solid rgb(114, 87, 0);
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url("https://images.cults3d.com/tmCq7UVnjE--_YVTuIzAauvvv-w=/516x516/filters:no_upscale()/https://fbi.cults3d.com/uploaders/27742295/illustration-file/55252354-a7ad-4eb6-bb64-f7c98e14a7b2/Resident-Evil-4-Leon-S-Kennedy-los-illuminados-Game-Boy-Advance-PlayStation-PlayStation-2-1595243-wa.png");
+    background-size: cover;
+    background-position: center;
+    /* Imagen de la parte trasera */
+    z-index: -1;
+    /* Asegura que la parte trasera esté inicialmente detrás */
+    transition: black 0.3;
+    position: center;
+    /* Transición para el cambio de z-index */
+}
+
+/* Clase para cambiar el z-index y mostrar la parte trasera */
+.item.flipped .itemBack
+{
+    z-index: 1;
+    /* Pone la parte trasera adelante */
+    transition: z-index 0.3s ease-in-out;
+}
+
+.item.flipped
+{
+    z-index: 2;
+    /* Pone la parte frontal atrás */
+    transition: z-index 0.3s ease-in-out;
+}
+
+.transparent
+{
+    background-color: transparent;
+    border: none;
+}
+
+
+.Leon
+{
+    background-image: url("https://i.pinimg.com/736x/0c/1a/a9/0c1aa970df907a75bc3199474d28c4d8.jpg");
+    background-position: initial;
+}
+
+
+.Ashley
+{
+    background-image: url("https://i.pinimg.com/736x/d7/23/e9/d723e9bdf8ebadff0b55e3fdd40fec73.jpg");
+    background-position: initial;
+}
+
+.Ada
+{
+    background-image: url("https://i.pinimg.com/736x/76/82/d1/7682d16abf6c3d7e71cfefb78cc5474e.jpg");
+    background-position: initial;
+}
+
+
+.Luis
+{
+    background-image: url("https://i.pinimg.com/736x/bd/70/1c/bd701c886c7cc8ec15d3cc3a3a1a21f7.jpg");
+    background-position: initial;
+}
+
+.Wesker
+{
+    background-image: url("https://i.pinimg.com/736x/07/5b/3b/075b3bfd6d5c775ece46d080b62264c6.jpg");
+    background-position: center;
+}
+
+.Villager
+{
+    background-image: url("https://i.pinimg.com/736x/8f/1a/43/8f1a43bcf4d42a0317bcaaea881aed8f.jpg");
+    background-position: initial;
+}
+
+.Salazar
+{
+    background-image: url("https://i.pinimg.com/736x/d7/c4/17/d7c417dcba1200c6e668a15defc2a5ba.jpg");
+    background-position: initial;
+}
+
+.Mendez
+{
+    background-image: url("https://i.pinimg.com/736x/1a/46/70/1a46709c1b93634c44d930c8b9bcc9fd.jpg");
+    background-position: initial;
+}
+
+.Saddler
+{
+    background-image: url("https://i.pinimg.com/736x/bc/aa/1f/bcaa1fd0f764e7b54adc95f9efff2e85.jpg");
+    background-position: initial;
+}
+
+.extra1
+{
+    background-image: url("https://i.pinimg.com/736x/35/a4/7b/35a47bbdeedc7e4764690dee1dd2912b.jpg");
+    background-position: initial;
+}
+
+.extra2
+{
+    background-image: url("https://i.pinimg.com/736x/25/99/b6/2599b6db0c7643c6b1d2a07668940d12.jpg");
+    background-position: initial;
+}
+
+.extra3
+{
+    background-image: url("https://i.pinimg.com/736x/7d/bb/ce/7dbbce6e69ca4f4275b83a7153c4db66.jpg");
+    background-position: initial;
+}
+
+.backItem
+{
+    background-image: url("https: //i.pinimg.com/736x/f1/b8/65/f1b865229294c81a2827f807012052f8.jpg");
+    background-position: initial;
+    z-index: 2;
+}
