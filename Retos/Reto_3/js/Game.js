@@ -48,6 +48,9 @@ Game(); //Start Game
 // FUNCIONES
 
 function Game() {
+
+    //Gestion de datos del jugador y juego.
+
     getUserDates();
 
     if (nickname == null) {
@@ -74,6 +77,8 @@ function Game() {
     PlayGame();
 }
 
+
+//Datos e intancia de cartas
 function StartGame() {
     Instance_item();
 
@@ -88,7 +93,7 @@ function StartGame() {
 
 }
 
-
+//Jugar
 function PlayGame() {
     intervalId = setInterval(Timer, 1000);
 
@@ -109,6 +114,7 @@ function rellenarForm() {
 }
 
 
+//Datos del Panel en base a dificultad y numero de cartas.
 function PanelPaint() {
 
     // Lógica para el tamaño de las columnas y filas según las cartas totales (numCards)
@@ -120,22 +126,31 @@ function PanelPaint() {
     if (numCards == 12) {  // Para 12 cartas
         columns = 4;
         rows = 3;
-        intervalFlip = 3;
-        maxIntentos = 24;
     }
+
     else if (numCards == 18) {  // Para 18 cartas
         columns = 6;
         rows = 3;
-        intervalFlip = 2;
-        maxIntentos = 9; //Puede fallar 9 veces
-
     }
+
     else if (numCards == 24) {  // Para 24 cartas
         columns = 6;
         rows = 4;
+    }
+
+    if (dificult == "120") { //Facil
+        intervalFlip = 3;
+        maxIntentos = 24;
+    }
+
+    else if (dificult == "90") {
+        intervalFlip = 2;
+        maxIntentos = 9; //Puede fallar 9 veces
+    }
+
+    else if (dificult == "45") {
         intervalFlip = 1;
         maxIntentos = 3; //Solo puede fallar 3 vez
-
     }
 
     // Aplicar el grid en CSS
