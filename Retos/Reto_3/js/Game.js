@@ -416,6 +416,7 @@ function EndGame() {
         item.removeEventListener("mousedown", SelectItem);
     }
 
+
     console.log("GAME OVER! Presiona el botón de reinicio para jugar nuevamente.");
     document.getElementById("EndGame").style.zIndex = 2;
     document.getElementById("Game").style.zIndex = 1;
@@ -424,6 +425,8 @@ function EndGame() {
 
 
 }
+
+
 
 function ResetGame() {
     console.log("RESET");
@@ -444,6 +447,15 @@ function ResetGame() {
 
     FormatedColors(); // Limpiar los colores
     PaintColors();
+    const items = document.getElementsByClassName("item");
+
+    for (let item of items) {
+        if (item.classList.contains("flipped")) {
+            console.log("La carta " + item.classList + "esta flipeada");
+            item.classList.toggle("flipped"); // Alterna la clase "flipped" al hacer clic //Voltea con zIndex
+        }
+    }
+
 
     document.getElementById("EndGame").style.zIndex = -1;
     document.getElementById("Game").style.zIndex = 2;
